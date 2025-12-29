@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>College Club Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+/* GLOBAL */
+body{
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  background:#f4f6f9;
+}
+
+/* NAVBAR */
+.navbar{
+  background:linear-gradient(to right,#141e30,#243b55);
+}
+.navbar-brand{
+  font-weight:bold;
+  letter-spacing:1px;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  background:linear-gradient(135deg,#667eea,#764ba2);
+  display:flex;
+  align-items:center;
+  color:white;
+}
+.hero h1{
+  font-size:3.5rem;
+  font-weight:700;
+}
+.hero p{
+  font-size:1.3rem;
+}
+
+/* SECTION TITLE */
+section h2{
+  font-weight:700;
+  color:#333;
+  margin-bottom:30px;
+}
+
+/* CARDS */
+.card{
+  border:none;
+  border-radius:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+  transition:0.4s;
+}
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* EVENTS */
+#events{
+  background:linear-gradient(to right,#fdfbfb,#ebedee);
+}
+
+/* MEMBERS */
+#members{
+  background:linear-gradient(to right,#d9a7c7,#fffcdc);
+}
+
+/* GALLERY */
+.gallery-box{
+  height:180px;
+  background:linear-gradient(135deg,#43cea2,#185a9d);
+  color:white;
+  font-size:1.2rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:15px;
+  font-weight:600;
+}
+
+/* CONTACT */
+#contact{
+  background:linear-gradient(to right,#8360c3,#2ebf91);
+  color:white;
+}
+#contact input,#contact textarea{
+  border-radius:10px;
+}
+
+/* FOOTER */
+footer{
+  background:#141e30;
+  color:white;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">COLLEGE CLUB</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="#members">Members</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="hero text-center">
+  <div class="container">
+    <h1>Welcome to Our College Club</h1>
+    <p>Empowering Students Through Innovation & Leadership</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="container text-center">
+  <h2>About Our Club</h2>
+  <p>
+    Our college club provides a platform for students to enhance technical,
+    leadership, and communication skills through various activities.
+  </p>
+</section>
+
+<!-- EVENTS -->
+<section id="events">
+  <div class="container">
+    <h2 class="text-center">Upcoming Events</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card p-4 text-center">
+          <h5>Web Workshop</h5>
+          <p>Hands-on training on modern web technologies.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card p-4 text-center">
+          <h5>Tech Seminar</h5>
+          <p>Industry experts sharing knowledge.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card p-4 text-center">
+          <h5>Hackathon</h5>
+          <p>24-hour coding challenge.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEMBERS -->
+<section id="members">
+  <div class="container">
+    <h2 class="text-center">Our Team</h2>
+    <div class="row text-center">
+      <div class="col-md-3 mb-4"><div class="card p-3">President</div></div>
+      <div class="col-md-3 mb-4"><div class="card p-3">Vice President</div></div>
+      <div class="col-md-3 mb-4"><div class="card p-3">Secretary</div></div>
+      <div class="col-md-3 mb-4"><div class="card p-3">Treasurer</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="container">
+  <h2 class="text-center">Gallery</h2>
+  <div class="row">
+    <div class="col-md-4 mb-4"><div class="gallery-box">Event 1</div></div>
+    <div class="col-md-4 mb-4"><div class="gallery-box">Event 2</div></div>
+    <div class="col-md-4 mb-4"><div class="gallery-box">Event 3</div></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <h2 class="text-center">Contact Us</h2>
+    <form class="col-md-6 mx-auto">
+      <input class="form-control mb-3" placeholder="Your Name">
+      <input class="form-control mb-3" placeholder="Email">
+      <textarea class="form-control mb-3" placeholder="Message"></textarea>
+      <button class="btn btn-light w-100">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center p-3">
+  © 2025 College Club | Developed by <b>Tamilaruvi.S</b>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
